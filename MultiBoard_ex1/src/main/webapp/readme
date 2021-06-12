@@ -1,0 +1,28 @@
+baseProject : springScan
+1) mvn Project : springKic
+2) pom.xml 
+3) web.xml copy
+4) springScan.xml copy to springKic.xml
+5) url test
+    /index   :  /view/index.jsp
+    /board/test   : /view/index.jsp
+    /member/test    : /view/index.jsp
+
+6) BoardAction copy to BoardController
+     list  ---->  @RequestMapping("list")
+     info, updateForm, deleteForm, replyForm
+
+7) common 
+   head.jsp
+   footer.jsp 
+   kiclogo.png
+
+8) web.xml
+ <jsp-config>
+		<jsp-property-group>
+			<url-pattern>/view/board/*</url-pattern>
+			<url-pattern>/view/member/*</url-pattern>
+			<include-prelude>/common/head.jsp</include-prelude>
+			<include-coda>/common/footer.jsp</include-coda>
+		</jsp-property-group>
+	</jsp-config>

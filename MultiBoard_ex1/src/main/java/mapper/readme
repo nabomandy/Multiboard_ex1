@@ -1,0 +1,6 @@
+1) src/mapper/DBMybatisConnection.java
+2) WEB-INF/lib/mybatis-3.2.7.jar บนป็
+3) src/dao/BoardDaoMybatis.java
+4) src/mapper/BoardMapper.xml
+5) src/mapper/mybatis-config.xml
+6) src/mapper/mybatis.properties
